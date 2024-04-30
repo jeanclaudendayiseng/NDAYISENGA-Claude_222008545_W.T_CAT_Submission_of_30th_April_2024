@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OUR CROP</title>
+
+
+          <h1><u> CROP FORM </u></h1>
+    <form method="post" action="CROP.php">
+            
+        <label for="cid">crop Id:</label>
+        <input type="text" id="cid" name="cid"><br><br>
+
+        <label for="cname">crop Name:</label>
+        <input type="text" id="cname" name="cname" required><br><br>
+
+        <label for="cPrice"> crop Price:</label>
+        <input type="text" id="cPrice" name="cPrice" required><br><br>
+
+        <label for="cdescription">crop description:</label>
+        <input type="text" id="cdescription" name="cdescription" required><br><br>
+
+        <input type="submit" name="add" value="Insert">
+      
+
+    </form>
+</body>
+</html>

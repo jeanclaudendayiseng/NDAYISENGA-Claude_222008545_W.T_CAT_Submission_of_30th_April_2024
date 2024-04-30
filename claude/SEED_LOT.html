@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEED_LOT</title>
+  <style>
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white;
+      background-color: pink;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: purple;
+    }
+    /* Unvisited link */
+    a:link {
+      color: brown; /* Changed to lowercase */
+    }
+    /* Hover effect */
+    a:hover {
+      background-color: white;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: red;
+    }
+
+    /* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px; /* Adjust this value as needed */
+      margin-top: 4px;
+    }
+    /* Extend margin left for search button */
+    input.form-control {
+      margin-left: 1200px; /* Adjust this value as needed */
+
+      padding: 8px;
+     
+    }
+    section{
+    padding:33px;
+    border-bottom: 1px solid #ddd;
+    }
+    footer{
+    text-align: center;
+    padding: 15px;
+    background-color:darkgray;
+    }
+  </style>
+  </head>
+
+<header>
+
+<body bgcolor="darkcyan">
+  <form class="d-flex" role="search" action="search.php">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;">
+    <img src="./IMAGES/RRR.jpg" width="90" height="40" alt="Logo">
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./crop.html">CROP</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./employee.html">EMPLOYEE</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./farm.html">FARM</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./Seed.html">SEED</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./seed_lot.html">SEED_LOT</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./view_crop.html">VIEW_CROP</a>
+  </li>
+  
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">Settings</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li><br><br>
+  </ul>
+
+</header>
+<section>
+  <title>SEED_LOT INFORMATION FORM</title>
+<style>
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="date"] {
+        width: 20%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<h2>SEED_LOT INFORMATION FORM</h2>
+
+<form action="/submit_seed_lot_info" method="post">
+    <label for="lot_number">Lot Number:</label>
+    <input type="text" id="lot_number" name="lot_number" required>
+
+    <label for="seed_id">Seed ID:</label>
+    <input type="text" id="seed_id" name="seed_id" required>
+
+    <label for="production_date">Production Date:</label>
+    <input type="date" id="production_date" name="production_date" required>
+
+    <label for="supplier">Supplier:</label>
+    <input type="text" id="supplier" name="supplier" required>
+
+    <label for="lot_size">Lot Size:</label>
+    <input type="text" id="lot_size" name="lot_size">
+
+    <input type="submit" value="insert">
+</form>
+
